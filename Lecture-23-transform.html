@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="class23.css">
+    <title>Transform</title>
+</head>
+<body>
+    <article>
+        <h1>Clip Paths</h1>
+        <p> here will be the description of what you're building or whatever you want to put into it!</p>
+    </article>
+</body>
+<style>
+    * {
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+article{
+    height: 50vh;
+    background: url('pic_trulli.jpg')I no-repeat  center center / cover;
+    color: white;
+    box-shadow: insert 1000px 0px rgba(0,0,0,0.4);
+    text-align: center;
+    padding: 35px 20px;
+    clip-path: polygon(
+        0% 0%,
+        100% 0%,
+        100% 75%,
+        75% 75%,
+        75% 100%,
+        50% 75%,
+        0% 75%
+    );
+}
+
+article h1,article p {
+    width:50%;
+    margin: auto;
+
+}
+</style>
+</html>
