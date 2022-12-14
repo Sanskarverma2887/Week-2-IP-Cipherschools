@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="class9.css">
+    <title>Multiple Background Images</title>
+</head>
+
+<body>
+    <article>
+        <h1>Multiple Background Images</h1>
+        <p>Here will be the description of what you are building or whatever you want to put into it!
+
+        </p>
+    </article>
+</body>
+<style>
+    *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    /* background-image: url('grass.jpeg');
+    background-repeat: no-repeat;
+    background-position:10% ;
+    background-position-x:10px ;
+    background-position-y:200px ; */
+    /* background-size: 200px; */
+    background: url('grass.jpeg') no-repeat 2% 200px / 400px , url('bg.jpeg') no-repeat center / 100vw 158vh;
+}
+article{
+    background-color: rgb(18, 161, 18);
+    width: 70%;
+    border-radius: 8px;
+    padding: 18px;
+    position: absolute;
+    top: 20%;
+    left: 30%;
+    color: #fff;
+}
+article h1{
+    font-size: 100px;
+}
+article p{
+    font-size:40px ;
+}
+</style>
+
+</html>

@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="class17.css">
+    <title>CSS Flexbox</title>
+</head>
+
+<body>
+    <div class="cards-container">
+        <div class="card">
+            <div class="inner-card">
+                <p>ONE</p>
+            </div>
+        </div>
+        <div class="card">
+            <div class="inner-card">
+                <p>TWO</p>
+            </div>
+        </div>
+        <div class="card">
+            <div class="inner-card">
+                <p>THREE</p>
+            </div>
+        </div>
+        <div class="card">
+            <div class="inner-card">
+                <p>FOUR</p>
+            </div>
+        </div>
+        <div class="card">
+            <div class="inner-card">
+                <p>FIVE</p>
+            </div>
+        </div>
+        <div class="card">
+            <div class="inner-card">
+                <p>SIX</p>
+            </div>
+        </div>
+        <div class="card">
+            <div class="inner-card">
+                <p>SEVEN</p>
+            </div>
+        </div>
+        <div class="card">
+            <div class="inner-card">
+                <p>EIGHT</p>
+            </div>
+        </div>
+</body>
+<style>
+    * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.cards-container{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    background: rgb(55, 13,83);
+    /* flex-wrap: wrap;
+    justify-content: center;
+    align-items: center; */
+}
+
+.card {
+    width: 60px;
+    height: 50px;
+    background: #f52e5d;
+    color: efff;
+    text-align: center;
+    margin: 10px;
+    padding: 10px;
+}
+
+.inner-card p {
+    font-size: 14px;
+}
+</style>
+</html>

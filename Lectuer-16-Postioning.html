@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="class16.css">
+    <title>Postioning</title>
+</head>
+<body>
+    <div class="Relative"><p>Relative</p></div>
+    <div class="Absolute"><p>Absolute</p></div>
+    <div class="Fixed"><p>Fixed</p></div>
+    <div class="Sticky"><p>Sticky</p></div>
+    <div class="Static"><p>Static</p></div>
+
+    
+</body>
+<style>
+    body{
+    border: 1px solid #333;
+    position: relative;
+    height: 1000px;
+}
+
+div{
+    background: lightblue;
+    padding: 10px;
+    margin: 10px;
+    width: 60px;
+}
+
+.Static{
+    position: static;
+}
+
+.Relative {
+    position: relative;
+    top: 50px;
+    right: -130px;
+    background: purple;
+    color: #fff;
+    z-index: 100;
+}
+
+.Absolute {
+    position:absolute;
+    top: 10%;
+    right: 5%;
+    z-index: 200;
+}
+
+.Fixed{
+    position: fixed;
+    top: -20px;
+    right: 20px;
+}
+
+.Sticky{
+    position: sticky;
+    top: 30%;
+
+}
+</style>
+</html>
