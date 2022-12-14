@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="class20.css">
+    <title>Responsiveness</title>
+</head>
+<body>
+    <div>
+        <h1>
+            A paragraph is a series of related sentences
+        </h1>
+        <img width="200px" src="image_car.jpg" alt="">
+    </div>
+</body>
+<style>
+    
+div{
+    padding: 20px;   
+}
+div img{
+    animation: slide 1s forwards;
+    transform: translateY(300px) scale(1.2);
+    opacity: 0;
+}
+@keyframes slide{
+    /* 0%{
+        opacity: 0;
+        transform: scale(1.1);
+    } */
+        /* 100%{
+            opacity: 1;
+            transform : none;
+        } */
+        to {
+            opacity: 1;
+            transform : none;
+        }
+}
+</style>
+</html>
